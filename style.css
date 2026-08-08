@@ -52,6 +52,13 @@ header h1 {
   line-height: 1.5;
 }
 
+.btn-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   background: var(--orange);
@@ -61,6 +68,12 @@ header h1 {
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
 main {
