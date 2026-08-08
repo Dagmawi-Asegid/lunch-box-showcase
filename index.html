@@ -24,60 +24,28 @@
   <main class="container">
 
     <section class="notice">
-      <strong>A note on the screens below:</strong> these are UI mockups recreated
-      from the app's actual XML layout code — not screenshots of a running app.
-      There's no Android SDK or emulator available in the environment this project
-      was built in, so it hasn't been compiled or run on-device. The Kotlin source
-      is real and complete; see the <a href="https://github.com/Dagmawi-Asegid/lunch-box#readme" target="_blank" rel="noopener noreferrer">README</a>
-      for exactly what that means.
+      <strong>These are real screenshots</strong>, not mockups — taken from
+      the app actually installed and running on a local Android emulator
+      (API 34), talking to the Firebase Local Emulator Suite for auth and
+      data. Building that test loop surfaced three real bugs (an invisible
+      button, a double-counted rating, and case-sensitive search) — all
+      fixed; details in the
+      <a href="https://github.com/Dagmawi-Asegid/lunch-box#bugs-found-and-fixed-by-actually-running-it" target="_blank" rel="noopener noreferrer">README</a>.
     </section>
 
     <section class="screens">
       <div class="phone">
-        <div class="phone-screen login-screen">
-          <p class="app-title">Lunch Box</p>
-          <div class="field">Email</div>
-          <div class="field">Password</div>
-          <div class="mock-btn primary">Log in</div>
-          <div class="mock-btn ghost">Create an account</div>
-        </div>
+        <img src="images/login.png" alt="Lunch Box login screen" />
         <p class="screen-label">Login</p>
       </div>
 
       <div class="phone">
-        <div class="phone-screen main-screen">
-          <div class="toolbar">Lunch Box</div>
-          <div class="search-row">
-            <div class="search-field">Search restaurants…</div>
-            <div class="sort-field">Top rated ▾</div>
-          </div>
-          <p class="hint">Tap a restaurant to leave a review</p>
-          <div class="restaurant-card">
-            <p class="r-name">Golden Wok</p>
-            <p class="r-cuisine">Chinese</p>
-            <div class="r-row"><span class="r-loc">Main St</span><span class="r-rating">4.8 ★ (32)</span></div>
-          </div>
-          <div class="restaurant-card">
-            <p class="r-name">Casa Luna</p>
-            <p class="r-cuisine">Mexican</p>
-            <div class="r-row"><span class="r-loc">Raymond Ave</span><span class="r-rating">4.6 ★ (21)</span></div>
-          </div>
-          <div class="restaurant-card">
-            <p class="r-name">Spice Route</p>
-            <p class="r-cuisine">Indian</p>
-            <div class="r-row"><span class="r-loc">College Ave</span><span class="r-rating">4.5 ★ (18)</span></div>
-          </div>
-        </div>
-        <p class="screen-label">Restaurant list</p>
+        <img src="images/list.png" alt="Lunch Box restaurant list, sorted by rating" />
+        <p class="screen-label">Restaurant list (live Firestore data)</p>
       </div>
 
       <div class="phone">
-        <div class="phone-screen review-screen">
-          <p class="review-title">Golden Wok</p>
-          <div class="stars">★★★★☆</div>
-          <div class="field tall">Share your experience…</div>
-          <div class="mock-btn primary">Submit review</div>
-        </div>
+        <img src="images/review.png" alt="Lunch Box add review screen" />
         <p class="screen-label">Add review</p>
       </div>
     </section>
@@ -88,7 +56,7 @@
         <ul>
           <li>Email/password auth via Firebase Authentication</li>
           <li>Restaurant list backed by Cloud Firestore</li>
-          <li>Live search by name</li>
+          <li>Live, case-insensitive search by name</li>
           <li>Sort by rating, name, or location</li>
           <li>Submit a star rating + written review; the restaurant's
             aggregate rating recomputes on submit</li>

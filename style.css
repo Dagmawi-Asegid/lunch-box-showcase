@@ -95,167 +95,18 @@ main {
   text-align: center;
 }
 
-.phone-screen {
+.phone img {
   width: 220px;
-  height: 440px;
-  background: #fff;
   border-radius: 24px;
   border: 6px solid #1a1c22;
-  overflow: hidden;
-  padding: 16px 14px;
-  color: #1c1f24;
-  font-size: 12px;
-  text-align: left;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .screen-label {
   margin-top: 12px;
   color: var(--muted);
   font-size: 0.8rem;
-}
-
-/* Login screen */
-.login-screen {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 60px;
-  align-items: stretch;
-}
-
-.app-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 20px;
-}
-
-.field {
-  border: 1px solid #d8dbe2;
-  border-radius: 6px;
-  padding: 10px;
-  color: #9aa0ab;
-  font-size: 11px;
-}
-
-.field.tall {
-  height: 70px;
-}
-
-.mock-btn {
-  border-radius: 6px;
-  padding: 10px;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 700;
-  margin-top: 4px;
-}
-
-.mock-btn.primary {
-  background: var(--orange);
-  color: #1c1f24;
-}
-
-.mock-btn.ghost {
-  color: var(--orange-dark);
-}
-
-/* Main screen */
-.main-screen {
-  padding: 0;
-}
-
-.toolbar {
-  background: var(--orange);
-  color: #fff;
-  font-weight: 700;
-  font-size: 13px;
-  padding: 12px 14px;
-}
-
-.search-row {
-  display: flex;
-  gap: 6px;
-  padding: 10px;
-}
-
-.search-field {
-  flex: 1;
-  border: 1px solid #d8dbe2;
-  border-radius: 6px;
-  padding: 6px 8px;
-  font-size: 10px;
-  color: #9aa0ab;
-}
-
-.sort-field {
-  border: 1px solid #d8dbe2;
-  border-radius: 6px;
-  padding: 6px 8px;
-  font-size: 10px;
-  color: #555;
-}
-
-.hint {
-  color: #9aa0ab;
-  font-size: 10px;
-  padding: 0 10px;
-  margin: 0 0 8px;
-}
-
-.restaurant-card {
-  margin: 0 10px 8px;
-  border: 1px solid #eceef2;
-  border-radius: 8px;
-  padding: 8px 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.r-name {
-  font-weight: 700;
-  font-size: 12px;
-  margin: 0;
-}
-
-.r-cuisine {
-  color: #888;
-  font-size: 10px;
-  margin: 2px 0 6px;
-}
-
-.r-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
-}
-
-.r-loc {
-  color: #999;
-}
-
-.r-rating {
-  color: var(--orange-dark);
-  font-weight: 700;
-}
-
-/* Review screen */
-.review-screen {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-top: 28px;
-}
-
-.review-title {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0;
-}
-
-.stars {
-  color: var(--orange);
-  font-size: 20px;
-  letter-spacing: 4px;
+  max-width: 220px;
 }
 
 .details {
